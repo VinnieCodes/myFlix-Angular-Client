@@ -14,7 +14,7 @@ const apiUrl = 'https://movieflixer-b13bdd05bf25.herokuapp.com/';
 })
 export class FetchApiDataService {
   // Inject the HttpClient module to the constructor params
-  // This will provide HttpClient to the entire class, making it available via this.http
+  // This will provide HttpClient to the entire class, making it available via this.httpp
   constructor(private http: HttpClient) {}
   // Making the api call for the user registration endpoint
   public userRegistration(userDetails: any): Observable<any> {
