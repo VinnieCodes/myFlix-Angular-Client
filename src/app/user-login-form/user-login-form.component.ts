@@ -10,6 +10,8 @@ import { FetchApiDataService } from '../fetch-api-data.service';
 // This import is used to display notifications back to the user
 import { MatSnackBar } from '@angular/material/snack-bar';
 
+import { Router } from '@angular/router';
+
 @Component({
   selector: 'app-user-login-form',
   templateUrl: './user-login-form.component.html',
@@ -27,7 +29,7 @@ export class UserLoginFormComponent implements OnInit {
   ngOnInit(): void {}
 
   // This is the function responsible for sending the form inputs to the backend
-  loginUser(): void {
+  logInUser(): void {
     this.fetchApiData.userLogin(this.userData).subscribe(
       (result) => {
         // Logic for a successful user registration goes here! (To be implemented)
