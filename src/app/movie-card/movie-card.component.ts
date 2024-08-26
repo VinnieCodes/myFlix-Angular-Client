@@ -14,8 +14,9 @@ ngOnInit(): void {
   this.getMovies();
 }
 
-getMovies(): void {
-  this.fetchApiData.getAllMovies().subscribe((resp: any) => {
+  getMovies(): void {
+    console.log(localStorage.getItem('token'));
+  this.fetchApiData.getAllMovies(localStorage.getItem('token')).subscribe((resp: any) => {
       this.movies = resp;
       console.log(this.movies);
       return this.movies;
