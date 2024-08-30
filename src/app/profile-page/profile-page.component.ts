@@ -16,6 +16,7 @@ export class ProfilePageComponent implements OnInit {
 
   ngOnInit(): void {
     this.getUser();
+    this.getfavoriteMovies();
   }
 
   updateUser(): void {
@@ -47,7 +48,7 @@ export class ProfilePageComponent implements OnInit {
     this.fetchApiData.getAllMovies(token).subscribe(
       (res: any) => {
         this.favoriteMovies = res.filter((movie: any) => {
-          return this.userData.favoriteMovies.includes(movie._id);
+          return this.userData.FavoriteMovies.includes(movie._id);
         });
       },
       (err: any) => {
