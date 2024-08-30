@@ -23,10 +23,12 @@ import { WelcomePageComponent } from './welcome-page/welcome-page.component';
 import { RouterModule, Routes } from '@angular/router';
 import { MatIconModule } from '@angular/material/icon';
 import { MessageBoxComponent } from './message-box/message-box.component';
+import { ProfilePageComponent } from './profile-page/profile-page.component';
 
 const appRoutes: Routes = [
   { path: 'welcome', component: WelcomePageComponent },
   { path: 'movies', component: MovieCardComponent },
+  { path: 'profile', component: ProfilePageComponent },
   { path: '', redirectTo: 'welcome', pathMatch: 'prefix' },
 ];
 
@@ -38,6 +40,7 @@ const appRoutes: Routes = [
     MovieCardComponent,
     WelcomePageComponent,
     MessageBoxComponent,
+    ProfilePageComponent,
   ],
   imports: [
     RouterModule.forRoot(appRoutes),
@@ -52,7 +55,7 @@ const appRoutes: Routes = [
     MatSnackBarModule,
     FormsModule,
     BrowserAnimationsModule,
-    MatIconModule
+    MatIconModule,
   ],
   providers: [provideClientHydration(), provideAnimationsAsync()],
   bootstrap: [AppComponent],
