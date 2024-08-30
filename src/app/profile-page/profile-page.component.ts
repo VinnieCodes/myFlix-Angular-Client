@@ -75,7 +75,7 @@ export class ProfilePageComponent implements OnInit {
       .removeFavoriteMovie(this.userData.Username, movie._id)
       .subscribe(
         (res: any) => {
-          this.userData.favoriteMovies = res.favoriteMovies;
+          this.userData.FavoriteMovies = res.FavoriteMovies;
           this.getfavoriteMovies();
         },
         (err: any) => {
