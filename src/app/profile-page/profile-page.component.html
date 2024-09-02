@@ -1,11 +1,9 @@
-<button
-    mat-raised-button
-    (click)="logout()"
-    color="primary"
-    style="margin-right: 10px;"
->
-Logout
-</button>
+ <nav>
+    <button mat-button color="primary" (click)="redirectProfile()">
+      Home
+    </button>
+    <button mat-button color="primary" (click)="logout()">Logout</button>
+  </nav>
 <mat-card>
     <mat-card-header>
     <mat-card-title>User Profile</mat-card-title>

@@ -31,7 +31,7 @@ export class MovieCardComponent {
 
           console.log('del success');
           console.log(res);
-          user.favoriteMovies = res.favoriteMovies;
+          user.FavoriteMovies = res.FavoriteMovies;
           localStorage.setItem('user', JSON.stringify(user));
         },
         (err) => {
@@ -48,7 +48,7 @@ export class MovieCardComponent {
 
           console.log('add success');
           console.log(res);
-          user.favoriteMovies = res.favoriteMovies;
+          user.FavoriteMovies = res.FavoriteMovies;
           localStorage.setItem('user', JSON.stringify(user));
         },
         (err) => {
@@ -95,5 +95,13 @@ export class MovieCardComponent {
       },
       width: '400px',
     });
+  }
+  logout(): void {
+    this.router.navigate(['welcome']);
+    localStorage.removeItem('user');
+  }
+
+  redirectProfile(): void {
+    this.router.navigate(['profile']);
   }
 }

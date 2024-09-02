@@ -71,21 +71,41 @@ export class ProfilePageComponent implements OnInit {
   }
 
   removeFromFavorite(movie: any): void {
+    // this.fetchApiData
+    //   .removeFavoriteMovie(this.userData.Username, movie._id)
+    //   .subscribe(
+    //     (res: any) => {
+    //       this.userData.FavoriteMovies = res.FavoriteMovies;
+    //       this.getfavoriteMovies();
+    //     },
+    //     (err: any) => {
+    //       console.error(err);
+    //     }
+    //   );
     this.fetchApiData
       .removeFavoriteMovie(this.userData.Username, movie._id)
       .subscribe(
-        (res: any) => {
+        (res) => {
+          console.log('remove success');
+          console.log(res);
           this.userData.FavoriteMovies = res.FavoriteMovies;
-          this.getfavoriteMovies();
+          localStorage.setItem('user', JSON.stringify(this.userData));
+          location.reload();
         },
-        (err: any) => {
+        (err) => {
           console.error(err);
         }
       );
+    // }
+    // localStorage.setItem('user', JSON.stringify(user));
   }
 
   logout(): void {
     this.router.navigate(['welcome']);
     localStorage.removeItem('user');
+  }
+
+  redirectProfile(): void {
+    this.router.navigate(['movies']);
   }
 }
