@@ -1,28 +1,34 @@
-# MyFlixAngularClient
+# myFlixAngular
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.1.4.
+## Main view
+● Displays a list of all movies to the user (each movie item includes an image, title, and description)
 
-## Development server
+● Provides a “search” feature to filter the list of movies
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+● Enables the user to select a movie for more detailed information
 
-## Code scaffolding
+● Includes the option to log out
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+● Provides navigation to the Profile view
 
-## Build
+## Single Movie view
+● Shows detailed information (description, genre, director, image) about a specific movie
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+● Allows users to add a movie to their list of favorites
 
-## Running unit tests
+## Login view
+● Enables users to log in using a username and password
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## Signup view
+● Allows new users to register by providing a username, password, email, and date of birth
 
-## Running end-to-end tests
+## Profile view
+● Displays the user’s registration details
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+● Allows users to update their information (username, password, email, date of birth)
 
-## Further help
+● Shows the user’s favorite movies
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
-# myFlix-Angular-client
+● Enables users to remove a movie from their list of favorites
+
+● Allows existing users to deregister
