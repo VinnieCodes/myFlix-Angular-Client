@@ -1,4 +1,4 @@
-# myFlixAngular
+# myFlix-Angular-client
 
 ## Main view
 ● Displays a list of all movies to the user (each movie item includes an image, title, and description)
