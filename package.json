@@ -8,7 +8,8 @@
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "serve:ssr:myFlix-Angular-client": "node dist/my-flix-angular-client/server/server.mjs",
-    "typedoc": "typedoc --options typedoc.json"
+    "typedoc": "typedoc --options typedoc.json",
+    "renetlify": "ng build && netlify deploy --prod"
   },
   "private": true,
   "dependencies": {
