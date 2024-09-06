@@ -52,7 +52,11 @@ export class FetchApiDataService {
       })
       .pipe(map(this.extractResponseData), catchError(this.handleError));
   }
-
+/**
+ * this will fetch director information
+ * @param director
+ * @returns 
+ */
   getDirector(director: string): Observable<any> {
     const token = localStorage.getItem('token');
     return this.http
@@ -63,7 +67,11 @@ export class FetchApiDataService {
       })
       .pipe(map(this.extractResponseData), catchError(this.handleError));
   }
-
+/**
+ * will fetch genre information
+ * @param genre 
+ * @returns 
+ */
   getGenre(genre: string): Observable<any> {
     const token = localStorage.getItem('token');
     return this.http
