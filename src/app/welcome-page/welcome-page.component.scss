@@ -1,0 +1,16 @@
+.main-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 70vh;
+  padding-bottom: 30vh;
+  background-color: #ebebeb;
+  color: black;
+  text-align: center;
+}
+
+#btns {
+  display: flex;
+  flex-direction: row;
+}

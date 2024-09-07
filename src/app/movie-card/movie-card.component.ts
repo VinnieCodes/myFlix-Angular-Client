@@ -39,9 +39,6 @@ export class MovieCardComponent {
         }
       );
     } else {
-      // icon?.setAttribute("fontIcon", "favorite");
-      // user.favoriteMovies.push(movie._id);
-      // addFavoriteMovie return unauth, debugging
       this.fetchApiData.addFavoriteMovie(user.Username, movie._id).subscribe(
         (res) => {
           icon?.setAttribute('fontIcon', 'favorite');

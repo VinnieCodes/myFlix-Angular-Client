@@ -71,17 +71,6 @@ export class ProfilePageComponent implements OnInit {
   }
 
   removeFromFavorite(movie: any): void {
-    // this.fetchApiData
-    //   .removeFavoriteMovie(this.userData.Username, movie._id)
-    //   .subscribe(
-    //     (res: any) => {
-    //       this.userData.FavoriteMovies = res.FavoriteMovies;
-    //       this.getfavoriteMovies();
-    //     },
-    //     (err: any) => {
-    //       console.error(err);
-    //     }
-    //   );
     this.fetchApiData
       .removeFavoriteMovie(this.userData.Username, movie._id)
       .subscribe(
@@ -96,8 +85,6 @@ export class ProfilePageComponent implements OnInit {
           console.error(err);
         }
       );
-    // }
-    // localStorage.setItem('user', JSON.stringify(user));
   }
 
   logout(): void {
