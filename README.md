@@ -59,4 +59,4 @@ This is myFlix-Angular-client, a portfolio project designed to demonstrate skill
 
 - Allows existing users to deregister
 
-My website is hosted [here as well](https://myflix-angular-client5463.netlify.app/welcome)
+### My website is hosted [here as well](https://myflix-angular-client5463.netlify.app/welcome)
